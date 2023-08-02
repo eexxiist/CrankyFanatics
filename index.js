@@ -1,26 +1,3 @@
-// let offset = 0;
-// const slider = document.querySelector('.slider-line');
-
-// document.querySelector('.arrow-next').addEventListener('click', function(){
-//     offset += 300;
-//     if(offset > 8300){
-//         offset = 0;
-//     }
-//     slider.style.left = -offset + 'px';
-// });
-
-// document.querySelector('.arrow-prev').addEventListener('click', function(){
-//     offset -= 300;
-//     if(offset < 0){
-//         offset = 8300;
-//     }
-//     slider.style.left = -offset + 'px';
-// });
-
-
-
-
-
 
 const faqs = document.querySelectorAll(".faq");
 const plus = document.querySelectorAll(".img-plus")
