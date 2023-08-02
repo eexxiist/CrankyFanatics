@@ -229,65 +229,51 @@
                     <h2 class="title">SNEAK PEEKS</h2>
                     <p class="subtitle">High quality cartoon style PFP</p>
                 </div>
-                <div class="container-gallery">
-                    <div class="slider">
-                        <div class="slider-line row space-between">
-                            <div class="part row space-between">
-                                <div class="nft1"></div>
-                                <div class="nft2"></div>
-                                <div class="nft3"></div>
-                                <div class="nft4"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft5"></div>
-                                <div class="nft6"></div>
-                                <div class="nft7"></div>
-                                <div class="nft8"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft9"></div>
-                                <div class="nft10"></div>
-                                <div class="nft11"></div>
-                                <div class="nft12"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft13"></div>
-                                <div class="nft14"></div>
-                                <div class="nft15"></div>
-                                <div class="nft16"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft17"></div>
-                                <div class="nft18"></div>
-                                <div class="nft19"></div>
-                                <div class="nft20"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft21"></div>
-                                <div class="nft22"></div>
-                                <div class="nft23"></div>
-                                <div class="nft24"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft25"></div>
-                                <div class="nft26"></div>
-                                <div class="nft27"></div>
-                                <div class="nft28"></div>
-                            </div>
-                            <div class="part row space-between">
-                                <div class="nft29"></div>
-                                <div class="nft30"></div>
-                                <div class="nft31"></div>
-                                <div class="nft32"></div>
+                 <div class="wrap">
+                    <div class="gallery" data-setting="setup1">
+                        <div class="slider">
+                            <div class="stage">
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/gallery/nft1.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="gallery-arrow row space-between">
-                        <button class="arrow-prev"></button>
-                        <button class="arrow-next"></button>
+                        <div class="control">
+                            <div class="nav-ctrl" data-hidden="true">
+                                <span class="prev" data-shift="prev"></span>
+                                <span class="next" data-shift="next"></span>
+                            </div>
+                            <ul class="dots-ctrl" data-hidden="true"></ul>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="roadmap-wrapper" class="roadmap-wrapper">
             <div class="roadmap-image"><img src="./images/main/roadmap.png" alt=""></div>
@@ -458,6 +444,52 @@
             </div>
         </footer>
     </main>
+
+    <script>
+		const setting = {
+			setup1: {
+				// включаем постраничную навигацию
+				dots: false,
+                // включаем кнопочную навигацию
+                nav: true,
+				// включаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: false,
+                autoScroll: false,
+				// настройки галереи в зависимости от разрешения
+				adaptive: {
+					// настройка работает в диапазоне разрешений 320-560px
+					320: {
+						// одновременно выводится 1 элемент
+						visibleItems: 1,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 560-768px
+					560: {
+						// одновременно выводится 1 элемент
+						visibleItems: 2,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 768-1024px
+					768: {
+						// одновременно выводятся 2 элемента
+						visibleItems: 3,
+					},
+					// настройка работает в диапазоне разрешений 1024 и выше
+					1024: {
+						// одновременно выводятся 3 элемента
+						visibleItems: 4,
+                        margin: 30
+					}
+				}
+			},
+		};
+	</script>
 <script src='index.js'></script>
 </body>
 </html>

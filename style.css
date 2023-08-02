@@ -44,7 +44,7 @@ body {
   background: white;
   justify-content: center;
   overflow-x: hidden;
-  background-color: #1F1F1F;
+  background-color: #0c0c0c;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -116,19 +116,12 @@ select {
   align-items: center;
 }
 
-/* .header{
-  width: ;
-  background-color: #000000;
-} */
-
-
 .head-wrapper{
     min-height: 129%;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 950px;
-    background-color: #000000;
     position: relative;
 }
 
@@ -401,8 +394,6 @@ select {
   padding: 0;
   margin: 0;
   width: 100%;
-  /* height: 1012px; */
-  background-color: #000000;
 }
 
 /* ------------------------- */
@@ -412,8 +403,7 @@ select {
   height: 90vh;
   overflow: hidden;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: space-between; */
+  margin-top: 50px;
 }
 
 
@@ -583,14 +573,96 @@ select {
   padding: 0;
   margin: 0;
   width: 100%;
-  max-height: 900px;
-  background-color: #000000;
 }
 
 .peeks{
   max-width: 1280px;
   margin: 0 auto;
 }
+
+/* ---------------------- */
+
+
+[data-hidden = true] { 
+  display: none; 
+}
+
+[data-hidden = false] { 
+  display: block; 
+}
+
+.nav-ctrl span, .dots-ctrl li { 
+  -webkit-transition: all 0.3s; 
+  transition: all 0.3s; 
+}
+
+.gallery { 
+  width: 100%; 
+  visibility: hidden; 
+  margin: 0 auto 30px; 
+  margin-top: 50px;
+}
+
+.slider { 
+  width: 100%; 
+  max-width: 1024px; 
+  position: relative; 
+  overflow: hidden; 
+  margin: 0 auto; 
+}
+
+.stage { 
+  overflow: hidden; 
+}
+
+.stage > div { 
+  float: left; 
+  position: relative; 
+}
+
+.stage > div img { 
+  width: 100%; 
+  max-width: 800px; 
+  height: auto; 
+}
+
+.control { 
+  width: 100%; 
+  position: relative; 
+}
+
+.nav-ctrl { 
+  text-align: center; 
+  margin-top: 15px; 
+}
+
+.nav-ctrl span { 
+  width: 100px; 
+  height: 30px; 
+  display: inline-block; 
+  line-height: 30px; 
+  text-transform: uppercase; 
+  text-align: center; 
+  margin: 0 5px; 
+  outline: none; 
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer; 
+  -webkit-transition: all 0.3s; 
+  transition: all 0.3s; 
+  background-image: url('./images/main/arrow-left.png');
+}
+
+.next{
+  transform: rotate(180deg);
+}
+
+.nav-ctrl .disable, .nav-ctrl .disable:hover { 
+  opacity: 0.4; 
+  cursor: default; 
+}
+
+/* -------------------------- */
 
 .title{
   padding-top: 150px;
@@ -642,223 +714,11 @@ select {
   transition: all 0.6s ease-in-out;
 }
 
-.nft1{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft1.png");
-  background-size: cover;
-}
-.nft2{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft2.png");
-  background-size: cover;
-}
-.nft3{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft3.png");
-  background-size: cover;
-}
-.nft4{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft4.png");
-  background-size: cover;
-}
-.nft5{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft5.png");
-  background-size: cover;
-}
-.nft6{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft6.png");
-  background-size: cover;
-}
-.nft7{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft7.png");
-  background-size: cover;
-}
-.nft8{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft8.png");
-  background-size: cover;
-}
-.nft9{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft9.png");
-  background-size: cover;
-}
-.nft10{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft10.png");
-  background-size: cover;
-}
-.nft11{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft11.png");
-  background-size: cover;
-}
-.nft12{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft12.png");
-  background-size: cover;
-}
-.nft13{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft13.png");
-  background-size: cover;
-}
-.nft14{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft14.png");
-  background-size: cover;
-}
-.nft15{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft15.png");
-  background-size: cover;
-}
-.nft16{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft16.png");
-  background-size: cover;
-}
-.nft17{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft17.png");
-  background-size: cover;
-}
-
-.nft18{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft18.png");
-  background-size: cover;
-}.nft19{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft19.png");
-  background-size: cover;
-}.nft20{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft20.png");
-  background-size: cover;
-}.nft21{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft21.png");
-  background-size: cover;
-}.nft22{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft22.png");
-  background-size: cover;
-}.nft23{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft23.png");
-  background-size: cover;
-}.nft24{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft24.png");
-  background-size: cover;
-}.nft25{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft25.png");
-  background-size: cover;
-}.nft26{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft26.png");
-  background-size: cover;
-}.nft27{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft27.png");
-  background-size: cover;
-}.nft28{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft28.png");
-  background-size: cover;
-}.nft29{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft29.png");
-  background-size: cover;
-}.nft30{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft30.png");
-  background-size: cover;
-}.nft31{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft31.png");
-  background-size: cover;
-}.nft32{
-  width: 300px;
-  height: 300px;
-  background-image: url("images/gallery/nft32.png");
-  background-size: cover;
-}
-
-.gallery-arrow{
-  padding-top: 40px;
-  max-width: 150px;
-  margin: 0 auto;
-}
-.arrow-next{
-  width: 46px;
-  height: 30px;
-  background-image: url("images/main/arrow-right.png");
-  background-size: cover;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.arrow-prev{
-  width: 46px;
-  height: 30px;
-  background-image: url("images/main/arrow-left.png");
-  background-size: cover;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .roadmap-wrapper{
   padding: 0;
   margin: 0;
   width: 100%;
   max-height: 850px;
-  background-color: #000000;
 }
 
 .roadmap-image{
@@ -872,7 +732,6 @@ select {
   margin: 0;
   width: 100%;
   height: 1250px;
-  background-color: #000000;
 }
 
 .team{
@@ -916,30 +775,10 @@ select {
   transform: scale(1.1)
 }
 
-.person-1{
+.person-1,.person-2,.person-3,.person-4,.person-5,.person-6,.person-7,.person-8{
   max-width: 300px;
 }
-.person-2{
-  max-width: 300px;
-}
-.person-3{
-  max-width: 300px;
-}
-.person-4{
-  max-width: 300px;
-}
-.person-5{
-  max-width: 300px;
-}
-.person-6{
-  max-width: 300px;
-}
-.person-7{
-  max-width: 300px;
-}
-.person-8{
-  max-width: 300px;
-}
+
 
 .cards-content{
   width: 255px;
@@ -986,7 +825,6 @@ select {
   margin: 0;
   width: 100%;
   min-height: 1000px;
-  background-color: #000000;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -1081,7 +919,6 @@ select {
   margin: 0;
   width: 100%;
   height: 387px;
-  background-color: #000000;
 }
 
 .footer-line{
