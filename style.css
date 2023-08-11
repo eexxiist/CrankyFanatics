@@ -92,13 +92,6 @@ select {
   src: url("fonts/ROCK.TTF");
 }
 
-/* @font-face {
-  font-family: "Rockwell";
-  src: url("ROCC____.ttf");
-  src: url("CustomFont.woff") format("woff"),
-  url("CustomFont.otf") format("opentype"),
-  url("CustomFont.svg#filename") format("svg");
-} */
 
 .align-center {
   align-items: center;
@@ -110,10 +103,6 @@ select {
 
 .space-between {
   justify-content: space-between;
-}
-
-.align-items{
-  align-items: center;
 }
 
 .wrapper{
@@ -623,7 +612,6 @@ select {
 }
 
 .team-wrapper{
- 
   width: 100%;
 }
 
@@ -923,24 +911,14 @@ select {
     right: 0;
   }
 
-  .first-monkey img{
-    object-fit: contain;
-  }
-  .second-monkey img{
-    object-fit: contain;
-  }
-  
-  .main-monkey img{
-    object-fit: contain;
-  }
-
-  .fourth-monkey img{
-    object-fit: contain;
-  }
-  
+  .first-monkey img,
+  .second-monkey img,
+  .main-monkey img,
+  .fourth-monkey img,
   .fifth-monkey img{
     object-fit: contain;
   }
+
   .subtitle h2 {
     font-size: 32px;
     width: 250px;
@@ -1232,10 +1210,6 @@ select {
   .faq-wrapper{
     height: 100%;
     padding-top: 2580px;
-  }
-  
-  .faq{
-    /* width: 400px; */
   }
 
   .question{
