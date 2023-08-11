@@ -90,6 +90,7 @@ select {
 @font-face {
   font-family: "Rockwell";
   src: url("fonts/ROCK.TTF");
+  font-display: swap;
 }
 
 
